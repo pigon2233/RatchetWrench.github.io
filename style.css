@@ -1,3 +1,120 @@
 p {
     color: rgb(0, 0, 0);
 }
+.css-1 {
+    padding-top: 64px;
+}
+.css-all {
+    padding: 0;
+    margin: 0;
+}
+.css-laet {
+    position: relative;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    min-height: 56px;
+}
+.css-toolbar{
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -wibkit-box-pack: center;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    cursor: pointer;
+    user-select: none;
+    vertical-align: middle;
+    appearance: none;
+    letter-spacing: 0px;
+    font-weight: 500;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    min-width: 64px;
+    line-height: 24px;
+    box-shadow: none;
+    color: rgb(90,150,240);
+    outline: 0px;
+    border: none;
+    margin: 0px;
+    text-decoration: none;
+    padding: 6px 8px;
+}
+.css-title{
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -wibkit-box-pack: center;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    cursor: pointer;
+    user-select: none;
+    vertical-align: middle;
+    appearance: none;
+    letter-spacing: 0px;
+    font-weight: 500;
+    font-size: 2rem;
+    text-transform: uppercase;
+    min-width: 64px;
+    line-height: 24px;
+    box-shadow: none;
+    color: rgb(255, 255, 255);
+    outline: 0px;
+    border: none;
+    margin: 0px;
+    text-decoration: none;
+    padding: 6px 8px;
+}
+
+.jss-1 {
+    top: 0;
+    left: auto;
+    right: 0;
+    z-index: 1100;
+    position: fixed;
+}
+.jss-2 {
+    overflow: hidden;
+    border-radius: 0px !important;
+}
+.jss-3Shadow{
+    border: none;
+    box-shadow: 0px 6px 6px -3px rgba(0, 0, 0, 0.1), 0px 10px 14px 1px rgba(0, 0, 0, 0.06), 0px 4px 18px 3px rgba(0, 0, 0, 0.04);
+}
+.jss-4{
+    background-color: #000000 !important;
+}
+.jss-5{
+    left: 0px;
+    transition: all 0.3s ease-in-out 0s;
+}
+.jss210{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.jss211{
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+    justify-content: flex-end;
+}
+.jss212{
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.jss222{
+    transition: opacity 0.3s ease-in-out;
+    margin-right: 1.5rem;
+}
