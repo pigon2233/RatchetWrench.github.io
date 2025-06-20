@@ -14,8 +14,9 @@ body{
 }
 .wrenchImage{
     float: right;
-    width: 50%;
+    width: 30%;
 }
+
 .card{
     display: flex;
     flex-direction: column;
