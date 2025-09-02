@@ -90,30 +90,6 @@
                         });
                     }
                 </script>
-                <p>致力於開發棘輪板手，以及各式手工具開發製造。</p>
-                <p>網頁尚在架構中，請見諒。</p>
-                <button class="button1" onclick="showAlert()">了解更多</button>
-                <script>
-                    function showAlert() {
-                        Swal.fire({
-                            title : "網頁架構中，請見諒。",
-                            timer : 2000,
-                            timerProgressBar : true,
-                            didOpen: () => {
-                                Swal.showLoading();
-                                const timer = Swal.getPopup().querySelector("b");
-                                timerInterval = setInterval(() => {
-                                timer.textContent = `${Swal.getTimerLeft()}`;
-                                }, 100);
-                            },
-                            willClose: () => {
-                                clearInterval(timerInterval);
-                            }
-                        }).then(() => {
-                            window.location.href = "about.html";
-                        });
-                    }
-                </script>
             </div>
         </div>
 
