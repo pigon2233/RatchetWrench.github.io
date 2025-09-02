@@ -61,7 +61,9 @@
             </div>
         </div>
 
+
         <div>
+            <div class="css-indexMain css_fixing">
             <div class="css-indexMain css_fixing">
                 <h1>歡迎蒞臨釱銨實業有限公司</h1>
                 <p>致力於開發葫蘆柄，以及各式手工具開發製造。</p>
@@ -88,6 +90,30 @@
                         });
                     }
                 </script>
+                <p>致力於開發棘輪板手，以及各式手工具開發製造。</p>
+                <p>網頁尚在架構中，請見諒。</p>
+                <button class="button1" onclick="showAlert()">了解更多</button>
+                <script>
+                    function showAlert() {
+                        Swal.fire({
+                            title : "網頁架構中，請見諒。",
+                            timer : 2000,
+                            timerProgressBar : true,
+                            didOpen: () => {
+                                Swal.showLoading();
+                                const timer = Swal.getPopup().querySelector("b");
+                                timerInterval = setInterval(() => {
+                                timer.textContent = `${Swal.getTimerLeft()}`;
+                                }, 100);
+                            },
+                            willClose: () => {
+                                clearInterval(timerInterval);
+                            }
+                        }).then(() => {
+                            window.location.href = "about.html";
+                        });
+                    }
+                </script>
             </div>
         </div>
 
@@ -95,6 +121,8 @@
             <p>&copy; 2025</p>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>
