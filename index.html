@@ -23,47 +23,18 @@
 
 <body>
     <div id='root'>
-        <div class = "boxRoot css-1" id="appLayout">
-            <div class="paperRoot jss-1 jss-2 jss-3Shadow jss-4 jss-5 css-all" data-testid="paper">
-                <div>
-                    <div class="toolbar-root css-laet">
-                        <div class="jss210">
-                            <a aria-current="page" class="css-title" href="index.html">
-                                <span class="css-title">釱銨實業有限公司</span>
-                            </a>
-                            <div class="jss211">
-                                <div class="jss212">
-                                    <div class="toolbar jss222">
-                                        <a aria-current="page" class="css-toolbar" href="index.html">
-                                            <span class="toolbar-title">首頁</span>
-                                        </a>
-                                    </div>
-                                    <div class="toolbar jss222">
-                                        <a aria-current="page" class="css-toolbar" href="about.html">
-                                            <span class="toolbar-title">關於</span>
-                                        </a>
-                                    </div>
-                                    <div class="toolbar jss222">
-                                        <a aria-current="page" class="css-toolbar" href="intruduce.html">
-                                            <span class="toolbar-title">產品介紹</span>
-                                        </a>
-                                    </div>
-                                    <div class="toolbar jss222">
-                                        <a aria-current="page" class="css-toolbar" href="contact.html">
-                                            <span class="toolbar-title">聯繫我們</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
+        <!--  header -->
+        <div id="header"></div>
+        <script>
+            fetch('head.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('header').innerHTML = html;
+            });
+        </script>
 
         <div>
-            <div class="css-indexMain css_fixing">
             <div class="css-indexMain css_fixing">
                 <h1>歡迎蒞臨釱銨實業有限公司</h1>
                 <p>致力於開發葫蘆柄，以及各式手工具開發製造。</p>
@@ -94,10 +65,11 @@
         </div>
 
         <div class="footer">
-            <p>&copy; 2025</p>
+            <p>&copy; 2025 </p>
+            <p>made by Liao Jian You </p>
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script><!--to look better-->
 </body>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>

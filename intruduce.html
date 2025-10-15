@@ -17,61 +17,36 @@
 
 <body>
     <div id='root'>
-        <div class = "boxRoot css-1" id="appLayout">
-            <div class="paperRoot jss-1 jss-2 jss-3Shadow jss-4 jss-5 css-all" data-testid="paper">
-                <div>
-                    <div class="toolbar-root css-laet">
-                        <div class="jss210">
-                            <a aria-current="page" class="css-title" href="index.html">
-                                <span class="css-title">釱銨實業有限公司</span>
-                            </a>
-                            <div class="jss211">
-                                <div class="jss212">
-                                    <div class="toolbar jss222">
-                                        <a aria-current="page" class="css-toolbar" href="index.html" class="toolbar-title">
-                                            <span class="toolbar-title">首頁</span>
-                                        </a>
-                                    </div>
-                                    <div class="toolbar jss222">
-                                        <a aria-current="page" class="css-toolbar" href="about.html" class="toolbar-title">
-                                            <span class="toolbar-title">關於</span>
-                                        </a>
-                                    </div>
-                                    <div class="toolbar jss222">
-                                        <a aria-current="page" class="css-toolbar" href="intruduce.html" class="toolbar-title">
-                                            <span class="toolbar-title">產品介紹</span>
-                                        </a>
-                                    </div>
-                                    <div class="toolbar jss222">
-                                        <a aria-current="page" class="css-toolbar" href="contact.html" class="toolbar-title">
-                                            <span class="toolbar-title">聯繫我們</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="card">
-            <div class="header">
-                <h2>葫蘆柄</h2>
-            </div>
-            <p>
-                <img src="images/head.jpg" class="wrenchImage">
-                特徵
-                <br>
-                ・實現行業最小的棘輪頭。
-                <br>
-                ・進給角度為5°。
-                <br>
-                ・頭部配有旋轉功能方便在更多情況下使用。
-                <br>
-                ・配有快速釋放按鈕，可以輕鬆地安裝與拆卸套筒/bits。
 
-            </p>
+        <!--  header -->
+        <div id="header"></div>
+        <script>
+            fetch('head.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('header').innerHTML = html;
+            });
+        </script>
+        
+        <div class="css-indexMain">
+            <div class="card">
+                <div class="header">
+                    <h2>葫蘆柄</h2>
+                </div>
+                <p>
+                    <img src="images/head.jpg" class="wrenchImage">
+                    特徵
+                    <br>
+                    ・實現行業最小的棘輪頭。
+                    <br>
+                    ・進給角度為5°。
+                    <br>
+                    ・頭部配有旋轉功能方便在更多情況下使用。
+                    <br>
+                    ・配有快速釋放按鈕，可以輕鬆地安裝與拆卸套筒/bits。
+
+                </p>
+            </div>
         </div>
 
         <div class="footer">
