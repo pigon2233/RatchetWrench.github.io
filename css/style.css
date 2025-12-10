@@ -497,7 +497,7 @@ body{
     max-width: 400px;
     height: auto;
     object-fit: contain;
-    mix-blend-mode: multiply; /* 如果圖片有白底，這行可以幫忙去背融合 */
+    mix-blend-mode: multiply;
     transition: transform 0.3s ease;
 }
 
