@@ -25,15 +25,13 @@
         <div id="header"></div>
 
         <div class="css-indexMain">
-            
             <div class="Gsection">
                 
                 <div class="Gtext">
                     <h1>歡迎蒞臨<br>釱銨實業有限公司</h1>
                     <p class="subtitle">致力於開發葫蘆柄，以及各式手工具開發製造。</p>
                     <p class="description">我們提供專業的 ODM/OEM 服務，從設計開發到產品製造，為您打造最高品質的手工具。</p>
-                    
-                    <button class="button1" onclick="showAlert()">了解更多</button>
+                    <button class="button1" onclick="window.location.href='products.html'">了解更多</button>
                 </div>
 
                 <div class="gImage">
@@ -55,21 +53,6 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script>
-        function showAlert() {
-            Swal.fire({
-                title : "網頁架構中，請見諒。",
-                icon: 'info', /* 加個圖示比較好看 */
-                timer : 2000,
-                timerProgressBar : true,
-                didOpen: () => {
-                    Swal.showLoading();
-                }
-            }).then(() => {
-                window.location.href = "about.html";
-            });
-        }
-    </script>
     <script src="scripts/main.js"></script>
 </body>
 </html>

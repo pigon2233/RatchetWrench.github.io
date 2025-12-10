@@ -7,7 +7,7 @@ body{
     font-weight: 400;
     line-height: 1.5;
     color: rgb(0, 0, 0);
-    background-color: rgb(255, 255, 255);
+    background-color: linear-gradient(to top, #8bbcec 0%, white 100%);
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -39,9 +39,21 @@ body{
     justify-content: space-between;
     max-width: 1100px; 
     margin: 0 auto;
-    padding: 2rem;
+    padding: 4rem 2rem;
     gap: 3rem;
     min-height: 60vh;
+    position: relative;
+}
+.Gsection::before {
+    content: '';
+    position: absolute;
+    top: -10%;
+    right: -10%;
+    width: 600px;
+    height: 600px;
+    background-color: rgba(90, 150, 240, 0.08);
+    border-radius: 50%;
+    z-index: -1;
 }
 
 .Gtext {
@@ -592,7 +604,7 @@ body{
     text-align: center;
 }
 
-.contact-card {
+.contactCard {
     background: #fff;
     border-radius: 12px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.08);
@@ -600,7 +612,7 @@ body{
     margin-top: 2rem;
 }
 
-.contact-grid {
+.contactGrid {
     display: flex;
     justify-content: center;
     gap: 2rem;
@@ -608,7 +620,7 @@ body{
     margin-bottom: 2rem;
 }
 
-.contact-item {
+.contactItem {
     flex: 1;
     min-width: 280px;
     background: #f8f9fa;
@@ -618,7 +630,7 @@ body{
 }
 
 
-.contact-item:hover {
+.contactItem:hover {
     transform: translateY(-5px);
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
@@ -643,7 +655,7 @@ body{
     color: #333;
 }
 
-.contact-link {
+.contactLink {
     color: #555;
     text-decoration: none;
     font-size: 1.2rem;
@@ -652,12 +664,12 @@ body{
     word-break: break-all;
 }
 
-.contact-link:hover {
+.contactLink:hover {
     color: rgb(90, 150, 240);
     text-decoration: underline;
 }
 
-.contact-note {
+.contactNote {
     background-color: #eaf4ff;
     color: #333;
     padding: 1rem;
@@ -666,7 +678,7 @@ body{
     margin-top: 1rem;
 }
 
-.contact-note i {
+.contactNote i {
     color: rgb(90, 150, 240);
     margin-right: 8px;
 }
