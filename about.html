@@ -14,38 +14,43 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="container">
-        
-        <!--  header -->
+    <div id='root'>        
+
         <div id="header"></div>
-        <script>
-            fetch('head.html')
-            .then(response => response.text())
-            .then(html => {
-                document.getElementById('header').innerHTML = html;
-            });
-        </script>
 
         <div class="css-indexMain">
-            <div class="content">
-                <p>釱銨實業有限公司專業製造手工具。
-                    <br>
-                    <br>
-                    目前主要製作葫蘆柄，並開發各式手工具。
-                    <br>
-                    ODM/OEM、設計開發、產品製造等。
-                    <br>
-                    <br>
-                    ・葫蘆柄
-                    <br>
-                    ・木工工具
-                    <br>
-                    ・各式手工具
-                </p>
-            <div class="footer">
-                <p>&copy; 2025</p>
+            <div class="aboutAll">
+                <h1>關於釱銨</h1>
+                <div class="aboutCard">
+                    <p class="aboutIntro">
+                        釱銨實業有限公司專注於專業手工具製造，致力於提供高品質的產品與服務。
+                        我們擁有豐富的開發經驗，能滿足客戶多樣化的需求。
+                    </p>
+                    
+                    <hr class="divider">
+
+                    <h3>主要業務</h3>
+                    <p>目前我們專注於<b>葫蘆柄</b>的生產，並持續開發各式創新的手工具產品。</p>
+                    <p>服務範圍包含：</p>
+                    <ul class="aboutServices">
+                        <li>ODM (原廠委託設計代工)</li>
+                        <li>OEM (原廠委託製造)</li>
+                        <li>產品設計與開發</li>
+                        <li>專業產品製造</li>
+                    </ul>
+
+                    <h3>產品項目</h3>
+                    <ul class="aboutProductList">
+                        <li><i class="fa-solid fa-wrench"></i> 葫蘆柄棘輪扳手</li>
+                        <li><i class="fa-solid fa-hammer"></i> 木工工具</li>
+                        <li><i class="fa-solid fa-toolbox"></i> 各式專業手工具</li>
+                    </ul>
+                </div>
             </div>
+                
+            <div id="footer"></div>
         </div>
     </div>
-
+    <script src="scripts/main.js"></script>
+</body>
 </html>
